@@ -17,33 +17,33 @@ const Container = styled('div')(({ theme }) => ({
 const AppCheckbox = () => {
   return (
     <Container>
-      <Box className="breadcrumb">
+      {/* <Box className="breadcrumb">
         <Breadcrumb
           routeSegments={[{ name: 'Material', path: '/material' }, { name: 'Chckbox' }]}
         />
-      </Box>
-
+      </Box> */}
+{/* 
       <SimpleCard title="simple checkbox">
         <SimpleCheckbox />
-      </SimpleCard>
+      </SimpleCard> */}
 
       <Box py="12px" />
 
-      <SimpleCard title="Checkbox with Label">
+      {/* <SimpleCard title="Checkbox with Label">
         <LabelledCheckbox />
-      </SimpleCard>
+      </SimpleCard> */}
 
       <Box py="12px" />
 
-      <SimpleCard title="Checkbox with Form Group">
+      {/* <SimpleCard title="Checkbox with Form Group">
         <FormGroupCheckbox />
-      </SimpleCard>
+      </SimpleCard> */}
 
       <Box py="12px" />
-
+{/* 
       <SimpleCard title="Checkbox with Different Label Placement">
         <PlacingCheckboxLabel />
-      </SimpleCard>
+      </SimpleCard> */}
     </Container>
   );
 };

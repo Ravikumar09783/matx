@@ -19,7 +19,7 @@ const Container = styled("div")(({ theme }) => ({
 const AppSwitch = () => {
   return (
     <Container>
-      <Box className="mb-sm-30">
+      {/* <Box className="mb-sm-30">
         <Breadcrumb routeSegments={[{ name: "Material", path: "/material" }, { name: "Switch" }]} />
       </Box>
 
@@ -43,7 +43,7 @@ const AppSwitch = () => {
         <SimpleCard title="Switch with Different Label Placement">
           <PlacingSwitchLabel />
         </SimpleCard>
-      </Stack>
+      </Stack> */}
     </Container>
   );
 };

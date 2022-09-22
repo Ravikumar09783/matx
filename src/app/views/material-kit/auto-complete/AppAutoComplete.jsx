@@ -16,7 +16,7 @@ const Container = styled('div')(({ theme }) => ({
 const AppAutoComplete = () => {
   return (
     <Container>
-      <Box className="breadcrumb">
+      {/* <Box className="breadcrumb">
         <Breadcrumb
           routeSegments={[{ name: 'Material', path: '/material' }, { name: 'Autocomplete' }]}
         />
@@ -36,7 +36,7 @@ const AppAutoComplete = () => {
 
       <SimpleCard title="Asyncronous Autocomplete">
         <BadgeAutocomplete />
-      </SimpleCard>
+      </SimpleCard> */}
     </Container>
   );
 };

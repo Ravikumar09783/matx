@@ -19,13 +19,13 @@ const StyledButton = styled(Button)(({ theme }) => ({
 export default function AppButton() {
   return (
     <AppButtonRoot>
-      <Box className="breadcrumb">
+      {/* <Box className="breadcrumb">
         <Breadcrumb
           routeSegments={[{ name: 'Material', path: '/material' }, { name: 'Buttons' }]}
         />
-      </Box>
+      </Box> */}
 
-      <SimpleCard title="contained buttons">
+      {/* <SimpleCard title="contained buttons">
         <StyledButton variant="contained" color="inherit">
           Default
         </StyledButton>
@@ -52,10 +52,10 @@ export default function AppButton() {
             Upload
           </StyledButton>
         </label>
-      </SimpleCard>
+      </SimpleCard> */}
 
       <Box py="12px" />
-
+{/* 
       <SimpleCard title="text buttons">
         <StyledButton>Default</StyledButton>
         <StyledButton color="primary">Primary</StyledButton>
@@ -67,10 +67,10 @@ export default function AppButton() {
         <label htmlFor="text-button-file">
           <StyledButton component="span">Upload</StyledButton>
         </label>
-      </SimpleCard>
+      </SimpleCard> */}
 
       <Box py="12px" />
-
+{/* 
       <SimpleCard title="outlined buttons">
         <StyledButton variant="outlined">Default</StyledButton>
         <StyledButton variant="outlined" color="primary">
@@ -99,11 +99,11 @@ export default function AppButton() {
         <StyledButton variant="outlined" color="inherit">
           Inherit
         </StyledButton>
-      </SimpleCard>
+      </SimpleCard> */}
 
       <Box py="12px" />
 
-      <SimpleCard title="icon buttons">
+      {/* <SimpleCard title="icon buttons">
         <IconButton className="button" aria-label="Delete">
           <Icon>delete</Icon>
         </IconButton>
@@ -131,11 +131,11 @@ export default function AppButton() {
             <Icon>photo_camera</Icon>
           </IconButton>
         </label>
-      </SimpleCard>
+      </SimpleCard> */}
 
       <Box py="12px" />
 
-      <SimpleCard title="different size buttons">
+      {/* <SimpleCard title="different size buttons">
         <Fab size="small" color="secondary" aria-label="Add" className="button">
           <Icon>add</Icon>
         </Fab>
@@ -147,11 +147,11 @@ export default function AppButton() {
         <Fab color="secondary" aria-label="Add" className="button">
           <Icon>add</Icon>
         </Fab>
-      </SimpleCard>
+      </SimpleCard> */}
 
       <Box py="12px" />
 
-      <SimpleCard title="outlined buttons">
+      {/* <SimpleCard title="outlined buttons">
         <Fab color="primary" aria-label="Add" className="button">
           <Icon>add</Icon>
         </Fab>
@@ -168,7 +168,7 @@ export default function AppButton() {
         <Fab disabled aria-label="Delete" className="button">
           <Icon>delete</Icon>
         </Fab>
-      </SimpleCard>
+      </SimpleCard> */}
     </AppButtonRoot>
   );
 }

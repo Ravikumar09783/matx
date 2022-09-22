@@ -21,7 +21,7 @@ const Container = styled("div")(({ theme }) => ({
 const AppSnackbar = () => {
   return (
     <Container>
-      <Box className="breadcrumb">
+      {/* <Box className="breadcrumb">
         <Breadcrumb
           routeSegments={[{ name: "Material", path: "/material" }, { name: "Snackbar" }]}
         />
@@ -59,7 +59,7 @@ const AppSnackbar = () => {
         <SimpleCard title="complementary project">
           <IntegrationNotistack />
         </SimpleCard>
-      </Stack>
+      </Stack> */}
     </Container>
   );
 };

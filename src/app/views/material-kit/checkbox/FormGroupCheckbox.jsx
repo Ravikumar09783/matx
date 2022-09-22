@@ -30,7 +30,7 @@ export default function FormGroupCheckbox() {
 
   return (
     <AppButtonRoot>
-      <FormControl component="fieldset" className="formControl">
+      {/* <FormControl component="fieldset" className="formControl">
         <FormLabel component="legend">Assign responsibility</FormLabel>
         <FormGroup>
           <FormControlLabel
@@ -49,9 +49,9 @@ export default function FormGroupCheckbox() {
           />
         </FormGroup>
         <FormHelperText>Be careful</FormHelperText>
-      </FormControl>
+      </FormControl> */}
 
-      <FormControl required error={error} component="fieldset" className="formControl">
+      {/* <FormControl required error={error} component="fieldset" className="formControl">
         <FormLabel component="legend">Pick two</FormLabel>
         <FormGroup>
           <FormControlLabel
@@ -71,7 +71,7 @@ export default function FormGroupCheckbox() {
         </FormGroup>
 
         <FormHelperText>You can display an error</FormHelperText>
-      </FormControl>
+      </FormControl> */}
     </AppButtonRoot>
   );
 }

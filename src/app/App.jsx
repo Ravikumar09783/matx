@@ -1,4 +1,5 @@
 import '../fake-db';
+import '../../node_modules/bootstrap/dist/css/bootstrap.css'
 import { Provider } from 'react-redux';
 import { useRoutes } from 'react-router-dom';
 import { MatxTheme } from './components';

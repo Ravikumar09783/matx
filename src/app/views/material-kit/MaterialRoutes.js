@@ -18,7 +18,7 @@ const AppExpansionPanel = Loadable(lazy(() => import('./expansion-panel/AppExpan
 
 const materialRoutes = [
   {
-    path: '/material/table',
+    path: '/users/table',
     element: <AppTable />,
   },
   {

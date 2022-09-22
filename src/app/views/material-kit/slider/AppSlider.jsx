@@ -19,7 +19,7 @@ const Container = styled("div")(({ theme }) => ({
 const AppSlider = () => {
   return (
     <Container>
-      <Box className="breadcrumb">
+      {/* <Box className="breadcrumb">
         <Breadcrumb routeSegments={[{ name: "Material", path: "/material" }, { name: "Slider" }]} />
       </Box>
 
@@ -43,7 +43,7 @@ const AppSlider = () => {
         <SimpleCard title="Vertical Slider">
           <VerticalSlider />
         </SimpleCard>
-      </Stack>
+      </Stack> */}
     </Container>
   );
 };

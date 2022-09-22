@@ -17,7 +17,7 @@ const Container = styled("div")(({ theme }) => ({
 const AppExpansionPanel = () => {
   return (
     <Container>
-      <Box className="breadcrumb">
+      {/* <Box className="breadcrumb">
         <Breadcrumb
           routeSegments={[{ name: "Material", path: "/material" }, { name: "Expansion Panel" }]}
         />
@@ -39,7 +39,7 @@ const AppExpansionPanel = () => {
         <SimpleCard title="Customized expansion panels">
           <CustomizedExpansionPanels />
         </SimpleCard>
-      </Stack>
+      </Stack> */}
     </Container>
   );
 };

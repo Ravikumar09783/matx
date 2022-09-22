@@ -58,7 +58,7 @@ const SimpleForm = () => {
 
   return (
     <div>
-      <ValidatorForm onSubmit={handleSubmit} onError={() => null}>
+      {/* <ValidatorForm onSubmit={handleSubmit} onError={() => null}>
         <Grid container spacing={6}>
           <Grid item lg={6} md={6} sm={12} xs={12} sx={{ mt: 2 }}>
             <TextField
@@ -187,7 +187,7 @@ const SimpleForm = () => {
           <Icon>send</Icon>
           <Span sx={{ pl: 1, textTransform: "capitalize" }}>Submit</Span>
         </Button>
-      </ValidatorForm>
+      </ValidatorForm> */}
     </div>
   );
 };

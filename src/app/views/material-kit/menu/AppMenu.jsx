@@ -18,7 +18,7 @@ const Container = styled("div")(({ theme }) => ({
 const AppMenu = () => {
   return (
     <Container>
-      <Box className="breadcrumb">
+      {/* <Box className="breadcrumb">
         <Breadcrumb routeSegments={[{ name: "Material", path: "/material" }, { name: "Menu" }]} />
       </Box>
 
@@ -38,7 +38,7 @@ const AppMenu = () => {
         <SimpleCard title="max height menu">
           <MaxHeightMenu />
         </SimpleCard>
-      </Stack>
+      </Stack> */}
     </Container>
   );
 };

@@ -948,7 +948,7 @@ const IconList = [
 const AppIcon = () => {
   return (
     <Container>
-      <Box className="breadcrumb">
+      {/* <Box className="breadcrumb">
         <Breadcrumb routeSegments={[{ name: "Material", path: "/material" }, { name: "Icons" }]} />
       </Box>
 
@@ -960,7 +960,7 @@ const AppIcon = () => {
             </Tooltip>
           ))}
         </Box>
-      </SimpleCard>
+      </SimpleCard> */}
     </Container>
   );
 };

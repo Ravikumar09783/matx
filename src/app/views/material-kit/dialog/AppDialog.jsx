@@ -23,7 +23,7 @@ const Container = styled('div')(({ theme }) => ({
 const AppDialog = () => {
   return (
     <Container>
-      <Box className="breadcrumb">
+      {/* <Box className="breadcrumb">
         <Breadcrumb routeSegments={[{ name: 'Material', path: '/material' }, { name: 'Dialog' }]} />
       </Box>
 
@@ -63,7 +63,7 @@ const AppDialog = () => {
         <SimpleCard title="confirmation dialog">
           <ConfirmationDialog />
         </SimpleCard>
-      </Stack>
+      </Stack> */}
     </Container>
   );
 };

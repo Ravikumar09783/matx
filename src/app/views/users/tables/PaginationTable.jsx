@@ -93,11 +93,11 @@ const StyledTable = styled(Table)(() => ({
 //   },
 // ];
 
-// const Savefdgfdsh= ()=>{
-//   const navigate= useNavigate();
-//   navigate('users/edit');
+const Savefdgfdsh= ()=>{
+  const navigate= useNavigate();
+  navigate('users/edit');
 
-// }
+}
 
 const PaginationTable = () => {
   const [tables, setTables] = useState([]);
@@ -158,6 +158,7 @@ const PaginationTable = () => {
                     ${subscriber.address.city}
                   </TableCell>
                   <TableCell align="right">
+                    <button className="btn btn-warning mx-3" onClick={Savefdgfdsh()}> Edit</button>
                     <button
                       className="btn btn-danger"
                       onClick={() => {
