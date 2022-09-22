@@ -15,13 +15,13 @@ const Container = styled("div")(({ theme }) => ({
 const AppTable = () => {
   return (
     <Container>
-      <Box className="breadcrumb">
+      {/* <Box className="breadcrumb">
         <Breadcrumb routeSegments={[{ name: "Material", path: "/material" }, { name: "Table" }]} />
-      </Box>
+      </Box> */}
 
-      <SimpleCard title="Simple Table">
+      {/* <SimpleCard title="Simple Table">
         <SimpleTable />
-      </SimpleCard>
+      </SimpleCard> */}
 
       <SimpleCard title="Pagination Table">
         <PaginationTable />

@@ -14,7 +14,7 @@ const SidebarNavRoot = styled(Box)(({ theme, width, primaryBg, bgImgURL }) => ({
   left: 0,
   height: '100vh',
   width: width,
-  boxShadow: themeShadows[8],
+  boxShadow: themeShadows[0],
   backgroundRepeat: 'no-repeat',
   backgroundPosition: 'top',
   backgroundSize: 'cover',

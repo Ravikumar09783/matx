@@ -58,9 +58,9 @@ const AppEchart = () => {
 
       <Box sx={{ py: '12px' }} />
 
-      <SimpleCard title="Area Chart">
+      {/* <SimpleCard title="Area Chart">
         <AreaChart height="350px" color={[theme.palette.primary.main]} />
-      </SimpleCard>
+      </SimpleCard> */}
     </Container>
   );
 };
