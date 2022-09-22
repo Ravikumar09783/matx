@@ -149,14 +149,10 @@ const PaginationTable = () => {
               .map((subscriber, index) => (
                 <TableRow key={index}>
                   <TableCell align="left">{subscriber.name}</TableCell>
-                  <TableCell align="center">{subscriber.email}</TableCell>
-                  <TableCell align="center">{subscriber.username}</TableCell>
-                  <TableCell align="center">
-                    {subscriber.address.street}
-                  </TableCell>
-                  <TableCell align="center">
-                    ${subscriber.address.city}
-                  </TableCell>
+                  <TableCell align="left">{subscriber.email}</TableCell>
+                  <TableCell align="left">{subscriber.username}</TableCell>
+                  <TableCell align="left">{subscriber.address.street}</TableCell>
+                  <TableCell align="center">{subscriber.address.city}</TableCell>
                   <TableCell align="right">
                     <button className="btn btn-warning mx-3" onClick={Savefdgfdsh()}> Edit</button>
                     <button

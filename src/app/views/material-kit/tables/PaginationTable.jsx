@@ -14,7 +14,7 @@ import {
 } from "@mui/material";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { BrowserRouter, Routes,Route, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes,Route, useNavigate, Link } from "react-router-dom";
 import EditTableRow from "./EditTableRow";
 
 const StyledTable = styled(Table)(() => ({
@@ -129,6 +129,10 @@ const PaginationTable = () => {
     return axios.delete(`http://localhost:3000/users/${id}`);
   };
 
+  const editRow = (subscriber)=>{
+    console.log(subscriber)
+  }
+
   return (
     <>
       <Box width="100%" overflow="auto">
@@ -167,6 +171,8 @@ const PaginationTable = () => {
                       
                       Delete
                     </button>
+
+                    <Link to='/users/edit'> <button className='btn btn-primary mx-3' onClick={()=>{editRow(subscriber)}}>Edit</button></Link>
                   </TableCell>
                 </TableRow>
               ))}
