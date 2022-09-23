@@ -1,5 +1,6 @@
 import Loadable from 'app/components/Loadable';
 import { lazy } from 'react';
+import AddTableRow from '../material-kit/tables/AddTableRow';
 import EditTableRow from '../material-kit/tables/EditTableRow';
 
 const AppTable = Loadable(lazy(() => import('./tables/AppTable')));
@@ -10,7 +11,11 @@ const userRoutes = [
     element: <AppTable />,
   },
   {
-    path: '/users/edit',
+    path: '/users/add',
+    element: <AddTableRow />,
+  },
+  {
+    path: '/users/edit/:id',
     element: <EditTableRow />,
   },
 ];

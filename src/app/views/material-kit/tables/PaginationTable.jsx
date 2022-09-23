@@ -108,6 +108,7 @@ const PaginationTable = () => {
     tableData();
   }, []);
 
+  const navigate =useNavigate();
   const tableData = async () => {
     const res = await axios.get("http://localhost:3000/users");
     console.log(res.data);
@@ -129,8 +130,11 @@ const PaginationTable = () => {
     return axios.delete(`http://localhost:3000/users/${id}`);
   };
 
-  const editRow = (subscriber)=>{
-    console.log(subscriber)
+  const editRow = (id)=>{
+   
+
+    console.log(id)
+    navigate(`/users/edit/${id}`)
   }
 
   return (
@@ -139,12 +143,12 @@ const PaginationTable = () => {
         <StyledTable>
           <TableHead>
             <TableRow>
-              <TableCell align="left">Name</TableCell>
-              <TableCell align="center">User Name</TableCell>
+              <TableCell align="left">ID</TableCell>
+              <TableCell align="center">NAME</TableCell>
               <TableCell align="center">Email</TableCell>
-              <TableCell align="center">Address</TableCell>
-              <TableCell align="center">City</TableCell>
-              <TableCell align="right">Action</TableCell>
+              <TableCell align="center">USERNAME</TableCell>
+              <TableCell align="center">EMAIL</TableCell>
+              <TableCell align="right">ACTIONS</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -152,14 +156,14 @@ const PaginationTable = () => {
               .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
               .map((subscriber, index) => (
                 <TableRow key={index}>
-                  <TableCell align="left">{subscriber.name}</TableCell>
+                  <TableCell align="left">{subscriber.id}</TableCell>
+                  <TableCell align="center">{subscriber.name}</TableCell>
                   <TableCell align="center">{subscriber.email}</TableCell>
-                  <TableCell align="center">{subscriber.username}</TableCell>
                   <TableCell align="center">
-                    {subscriber.address.street}
+                    {subscriber.username}
                   </TableCell>
                   <TableCell align="center">
-                    ${subscriber.address.city}
+                    {subscriber.email}
                   </TableCell>
                   <TableCell align="right">
                     <button
@@ -171,8 +175,7 @@ const PaginationTable = () => {
                       
                       Delete
                     </button>
-
-                    <Link to='/users/edit'> <button className='btn btn-primary mx-3' onClick={()=>{editRow(subscriber)}}>Edit</button></Link>
+                       <button className='btn btn-primary mx-3' onClick={()=>{editRow(subscriber.id)}}>Edit</button>
                   </TableCell>
                 </TableRow>
               ))}

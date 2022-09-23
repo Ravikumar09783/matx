@@ -21,6 +21,7 @@ const materialRoutes = [
     path: '/users/table',
     element: <AppTable />,
   },
+
   {
     path: '/material/form',
     element: <AppForm />,

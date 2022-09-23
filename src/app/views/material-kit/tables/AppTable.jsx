@@ -1,5 +1,6 @@
 import { Box, styled } from "@mui/material";
 import { Breadcrumb, SimpleCard } from "app/components";
+import { useNavigate } from "react-router-dom";
 import PaginationTable from "./PaginationTable";
 import SimpleTable from "./SimpleTable";
 
@@ -13,6 +14,7 @@ const Container = styled("div")(({ theme }) => ({
 }));
 
 const AppTable = () => {
+  const navigate= useNavigate()
   return (
     <Container>
       {/* <Box className="breadcrumb">
@@ -22,6 +24,8 @@ const AppTable = () => {
       {/* <SimpleCard title="Simple Table">
         <SimpleTable />
       </SimpleCard> */}
+
+      <button className="btn btn-success mb-3" onClick={()=>{navigate('/users/add')}}>Add User</button>
 
       <SimpleCard title="Pagination Table">
         <PaginationTable />
